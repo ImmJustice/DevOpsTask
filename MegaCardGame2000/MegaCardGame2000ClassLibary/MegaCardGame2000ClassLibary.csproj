@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attack.cs" />
     <Compile Include="Back Stab.cs" />
     <Compile Include="Berserk.cs" />
     <Compile Include="Character.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="NormalAttack.cs" />
     <Compile Include="PlayerCharacter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialAttack.cs" />
     <Compile Include="Thief.cs" />
     <Compile Include="Warrior.cs" />
   </ItemGroup>

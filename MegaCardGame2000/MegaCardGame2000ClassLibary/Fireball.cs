@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Fireball : Mage
+    class Fireball : SpecialAttack
     {
-        private int calculateSpecialAttack;
-        private int dealDamage;
-        private int sdealDamage;
-        private int specialAttackDamage;
-        private int takeDamage;
+       
 
-        public int fireball()
+        public int GetAttackResult()
         {
             throw new NotImplementedException();
         }

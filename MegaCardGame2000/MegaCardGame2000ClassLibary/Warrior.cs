@@ -8,9 +8,9 @@ namespace MegaCardGame2000ClassLibary
 {
     class Warrior : PlayerCharacter
     {
-        private int Berserk;
+        
 
-        public int warrior()
+        public int warrior(int p, int p_2, string p_3)
         {
             throw new NotImplementedException();
         }

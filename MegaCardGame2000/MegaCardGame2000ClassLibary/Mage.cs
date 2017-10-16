@@ -8,9 +8,9 @@ namespace MegaCardGame2000ClassLibary
 {
     class Mage : PlayerCharacter
     {
-        private int Fireball;
+        
 
-        public int mage()
+        public int mage(int p, int p_2, string p_3)
         {
             throw new NotImplementedException();
         }

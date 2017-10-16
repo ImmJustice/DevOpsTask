@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Berserk : Warrior
+    class Berserk : SpecialAttack
     {
-        private int calculateSpecialAttack;
-        private int dealDamage;
-        private int specialAttackDamage;
-        private int takeDamage;
+        
 
-        public int berserk()
+        public int GetAttackResult()
         {
             throw new NotImplementedException();
         }

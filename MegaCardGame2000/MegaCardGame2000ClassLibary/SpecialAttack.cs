@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class NormalAttack : Attack
+    class SpecialAttack
     {
-        public int GetAttackResult()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

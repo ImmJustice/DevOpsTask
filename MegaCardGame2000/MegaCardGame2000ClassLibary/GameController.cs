@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class GameController
+    public class GameController
     {
         private NonPlayerCharacter enemy;
         private PlayerCharacter player;
 
-        public int dealDamage()
+        public void ChooseClass(string Class)
         {
             throw new NotImplementedException();
         }
 
-        public int normalAttack()
+        public void NormalAttack()
         {
-            throw new NotImplementedException();
+
         }
 
-        public int SpecialAttack()
+        public void SpecialAttack()
         {
-            throw new NotImplementedException();
+
         }
 
-        public int takeDamage()
+        public void StartBattle()
         {
-            throw new NotImplementedException();
+
         }
 
-
+        
     }
 }

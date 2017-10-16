@@ -8,9 +8,9 @@ namespace MegaCardGame2000ClassLibary
 {
     class Thief : PlayerCharacter
     {
-        private int BackStab;
+       
         
-        public int thief()
+        public int thief(int p, int p_2, string p_3)
         {
             throw new NotImplementedException();
         }

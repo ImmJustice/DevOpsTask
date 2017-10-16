@@ -10,6 +10,16 @@ namespace MegaCardGame2000ClassLibary
     {
         private char characterName;
         private NormalAttack normalAttack;
-        // SpecialAttack specialAttack;
+        private SpecialAttack specialAttack;
+
+        public int GetNormalAttackResult()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetSpecialAttackResult()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class NormalAttack : Attack
+    class Attack
     {
         public int GetAttackResult()
         {

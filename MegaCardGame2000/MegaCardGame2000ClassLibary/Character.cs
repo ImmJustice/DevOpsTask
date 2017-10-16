@@ -11,5 +11,10 @@ namespace MegaCardGame2000ClassLibary
         private int baseDamage;
         private int currentHealthPoints;
         private int maxHealthPoints;
+
+        public int TakeDamage(int damage)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

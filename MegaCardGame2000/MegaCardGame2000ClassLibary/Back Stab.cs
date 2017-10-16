@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Back_Stab : Thief
+    class Back_Stab : SpecialAttack
     {
 
-        private int calculateSpecialAttack;
-        private int dealDamage;
-        private int sdealDamage;
-        private int specialAttackDamage;
-        private int takeDamage;
+        
 
-        public int backStab()
+        public int GetAttackResult()
         {
             throw new NotImplementedException();
         }

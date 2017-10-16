@@ -10,5 +10,10 @@ namespace MegaCardGame2000ClassLibary
     {
         private NormalAttack attack;
         private char enemyType;
+
+        public int GetNormalAttackResult()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
