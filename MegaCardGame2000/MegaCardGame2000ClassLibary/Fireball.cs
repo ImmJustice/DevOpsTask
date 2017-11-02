@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Fireball : SpecialAttack
+   public class Fireball : SpecialAttack
     {
        
 
         public int GetAttackResult()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+
+            switch (rnd.Next(0, 2))
+            {
+                case (1):
+                    return 1;
+                default:
+                    return 0;
+            }
         }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Warrior : PlayerCharacter
+   public class Warrior : PlayerCharacter
     {
         
 
-        public int warrior(int p, int p_2, string p_3)
+        public int Warrior(int p, int p_2, string p_3)
         {
             throw new NotImplementedException();
         }

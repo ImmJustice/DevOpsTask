@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Berserk : SpecialAttack
+   public class Berserk : SpecialAttack
     {
         
 
         public int GetAttackResult()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+
+            switch (rnd.Next(0, 3))
+            {
+                case (1):
+                    return 1;
+                default:
+                    return 0;
+            }
         }
     }
 }

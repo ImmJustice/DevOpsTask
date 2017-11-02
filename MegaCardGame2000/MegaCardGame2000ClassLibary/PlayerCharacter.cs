@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class PlayerCharacter : Character
+  public  class PlayerCharacter : Character
     {
-        private char characterName;
-        private NormalAttack normalAttack;
-        private SpecialAttack specialAttack;
+        public char characterName;
+        public NormalAttack normalAttack;
+        public SpecialAttack specialAttack;
+
+        public PlayerCharacter(int Damage, int Hp) : base(Damage, Hp) { }
 
         public int GetNormalAttackResult()
         {
-            throw new NotImplementedException();
+            return baseDamage;
         }
 
         public int GetSpecialAttackResult()

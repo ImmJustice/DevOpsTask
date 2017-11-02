@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class Character
+   public  class Character
     {
-        private int baseDamage;
-        private int currentHealthPoints;
-        private int maxHealthPoints;
+        public int baseDamage;
+        public int currentHealthPoints;
+        public int maxHealthPoints;
+
+        public Character(int Damage, int Health)
+        {
+            baseDamage = Damage;
+            currentHealthPoints = Health;
+            maxHealthPoints = currentHealthPoints;
+        }
 
         public int TakeDamage(int damage)
         {
-            throw new NotImplementedException();
+            currentHealthPoints -= damage;
+            return currentHealthPoints;
         }
     }
 }

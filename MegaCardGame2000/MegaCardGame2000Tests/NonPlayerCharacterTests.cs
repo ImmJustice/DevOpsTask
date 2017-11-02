@@ -9,31 +9,16 @@ using System.Threading.Tasks;
 namespace MegaCardGame2000ClassLibary.Tests
 {
     [TestClass()]
-    public class GameControllerTests
+    public class NonPlayerCharacterTests
     {
         [TestMethod()]
-        public void ChooseClassTest()
+        public void TakeDamageTest()
         {
             try
             {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                string vPlayerCharacter = vTest.ChooseClass("Mage");
-            }
-            catch (Exception)
-            {
-
-                Assert.Fail();
-            }
-        }
-
-
-        [TestMethod()]
-        public void NormalAttackTest()
-        {
-            try
-            {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                vTest.NormalAttack();
+                NonPlayerCharacter vTest = new NonPlayerCharacter(NormalAttack);
+                vTest.TakeDamage();
+                Assert.AreEqual(10,vDamage);
             }
             catch (Exception)
             {
@@ -43,12 +28,13 @@ namespace MegaCardGame2000ClassLibary.Tests
         }
 
         [TestMethod()]
-        public void SpecialAttackTest()
+        public void TakeDamageTest1()
         {
             try
             {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                vTest.SpecialAttack();
+                NonPlayerCharacter vTest = new NonPlayerCharacter(NormalAttack);
+                vTest.TakeDamage();
+                Assert.AreEqual(40, vDamage);
             }
             catch (Exception)
             {
@@ -58,10 +44,12 @@ namespace MegaCardGame2000ClassLibary.Tests
         }
 
         [TestMethod()]
-        public void StartBattleTest()
+        public void GetNormalAttackResultTest()
         {
             try
             {
+                NonPlayerCharacter vTest = new NonPlayerCharacter(NormalAttack);
+                vTest.GetNormalAttackResult();
 
             }
             catch (Exception)
@@ -69,6 +57,25 @@ namespace MegaCardGame2000ClassLibary.Tests
 
                 Assert.Fail();
             }
+
         }
+
+        [TestMethod()]
+        public void NPCAttackTest()
+        {
+            try
+            {
+                NonPlayerCharacter vTest = new NonPlayerCharacter(NormalAttack);
+                vTest.NPCAttack();
+                Assert.AreEqual(10, vNpcAttack);
+            }
+            catch (Exception)
+            {
+
+                Assert.Fail();
+            }
+
+        }
+
     }
 }

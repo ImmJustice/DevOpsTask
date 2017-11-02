@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MegaCardGame2000ClassLibary
 {
-    class NonPlayerCharacter : Character
+   public class NonPlayerCharacter : Character
     {
-        private NormalAttack attack;
-        private char enemyType;
+        public NormalAttack attack;
+        public char enemyType;
 
         public int GetNormalAttackResult()
         {
-            throw new NotImplementedException();
+            return baseDamage;
         }
     }
 }

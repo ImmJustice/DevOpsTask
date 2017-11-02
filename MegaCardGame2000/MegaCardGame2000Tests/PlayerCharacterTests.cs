@@ -9,15 +9,19 @@ using System.Threading.Tasks;
 namespace MegaCardGame2000ClassLibary.Tests
 {
     [TestClass()]
-    public class GameControllerTests
+    public class PlayerCharacterTests
     {
+        
+
+       
+
         [TestMethod()]
-        public void ChooseClassTest()
+        public void GetSpecialAttackResultTest()
         {
             try
             {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                string vPlayerCharacter = vTest.ChooseClass("Mage");
+                PlayerCharacter vTest = new PlayerCharacter(NormalAttack, SpecialAttack);
+                vTest.GetSpecialAttackResult();
             }
             catch (Exception)
             {
@@ -28,12 +32,13 @@ namespace MegaCardGame2000ClassLibary.Tests
 
 
         [TestMethod()]
-        public void NormalAttackTest()
+        public void TakeDamageTest()
         {
             try
             {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                vTest.NormalAttack();
+                PlayerCharacter vTest = new PlayerCharacter(NormalAttack, SpecialAttack);
+                vTest.dealDamage(40);
+                Assert.AreEqual(40, vDamage);
             }
             catch (Exception)
             {
@@ -43,26 +48,13 @@ namespace MegaCardGame2000ClassLibary.Tests
         }
 
         [TestMethod()]
-        public void SpecialAttackTest()
+        public void TakeDamageTest1()
         {
             try
             {
-                GameController vTest = new GameController(PlayerCharacter, NonPlayerCharacter);
-                vTest.SpecialAttack();
-            }
-            catch (Exception)
-            {
-
-                Assert.Fail();
-            }
-        }
-
-        [TestMethod()]
-        public void StartBattleTest()
-        {
-            try
-            {
-
+                PlayerCharacter vTest = new PlayerCharacter(NormalAttack, SpecialAttack);
+                vTest.TakeDamage(40);
+                Assert.AreEqual(40, vDamage);
             }
             catch (Exception)
             {
